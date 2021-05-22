@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/privet_bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="cardd">
+        <div class="navigation">
+            <div class="clock">11:23</div>
+            <div class="another"><img src="img/Capture.JPG" alt=""></div>
+        </div>
+        <div class="display">
+            <div class="history"></div>
+            <div class="result"></div>
+        </div>
+        <div class="keyboard">
+            <table>
+                <tr>
+                    <td class="c"><div onclick="clickButton(undefined,'c')">C</div></td>
+                    <td><div onclick="clickButton(undefined, '%')">%</div></td>
+                    <td><div onclick="clickButton(undefined, '/')">÷</div></td>
+                    <td class="mainActions"><div onclick="clickButton(undefined,'*')">x</div></td>
+                </tr>
+                <tr>
+                    <td><div onclick="clickButton(7)">7</div></td>
+                    <td><div onclick="clickButton(8)">8</div></td>
+                    <td><div onclick="clickButton(9)">9</div></td>
+                    <td class="mainActions"><div onclick="clickButton(undefined, '-')">-</div></td>
+                </tr>
+                <tr>
+                    <td><div onclick="clickButton(4)">4</div></td>
+                    <td><div onclick="clickButton(5)">5</div></td>
+                    <td><div onclick="clickButton(6)">6</div></td>
+                    <td class="mainActions"><div onclick="clickButton(undefined, '+')">+</div></td>
+                </tr>
+                <tr>
+                    <td><div onclick="clickButton(1)">1</div></td>
+                    <td><div onclick="clickButton(2)">2</div></td>
+                    <td><div onclick="clickButton(3)">3</div></td>
+                    <td class="equal" rowspan="2"><div onclick="clickButton(undefined, '=')">=</div></td>
+                </tr>
+                <tr>
+                    <td><div onclick="clickButton('.')">.</div></td>
+                    <td><div onclick="clickButton(0)">0</div></td>
+                    <td class="bakcspace"><div onclick="clickButton(undefined, 'back')"><div class="img icon"></div></div></td>
+                </tr>
+            </table>
+
+            
+        </div>
+    </div>
+
+    <img src="img/dark.svg" alt="dark" id="dark">
+    <img src="img/light.svg" alt="light" id="light">
+    <script src="main.js"></script>
+</body>
+</html>
